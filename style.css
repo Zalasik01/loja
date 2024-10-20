@@ -1,0 +1,156 @@
+body {
+    background-color: #201F1B;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #3A89FF;
+    color: #fff;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.featured-products {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permite que os cards quebrem em várias linhas, se necessário */
+}
+
+.card-box {
+    background-color: #1E1F26;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: white;
+    max-width: 350px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px; /* Espaçamento entre os cards */
+}
+
+.card-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-header h2 {
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.card-content {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.price-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #01A5B1;
+}
+
+.sizes {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.img-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-card {
+    padding: 10px 0;
+}
+
+.img-card img:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    background-color: #01A5B1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #01909A;
+}
+
+.background {
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 75vh;
+}
+
+.destaque {
+    font-weight: 600;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 40px;
+    font-size: 28px;
+}
